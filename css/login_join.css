@@ -1,0 +1,461 @@
+@font-face {
+  font-family: 'ChosunGu';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'ChosunGu';
+  font-size: 19px; }
+  * :focus {
+    outline: none; }
+
+html {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -425px;
+  margin-left: -600px; }
+
+button {
+  cursor: url("../img/icons/pointer.cur"), pointer; }
+
+.desk_top {
+  background-color: #008080;
+  width: 1200px;
+  height: 850px; }
+
+.wall_paper {
+  width: 1200px;
+  height: 800px;
+  position: absolute; }
+
+.wall_paper .common_btn {
+  display: block;
+  background-color: transparent;
+  width: 82px;
+  margin-top: 33px;
+  margin-left: 25px;
+  border: none; }
+
+.wall_paper .mycom_total {
+  display: inline-block;
+  width: 82px;
+  margin-top: 34px;
+  margin-left: 25px; }
+
+.wall_paper .comm_icon {
+  width: 66px;
+  height: 66px;
+  margin: 0 auto; }
+
+.wall_paper p {
+  clear: both;
+  display: inline-block;
+  font-size: 19px;
+  text-align: center;
+  width: 80px;
+  margin-top: 7px;
+  color: white; }
+
+.atti_total {
+  display: inline-block;
+  width: 80px;
+  height: 105px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -52px;
+  margin-left: -40px;
+  background-color: transparent;
+  border: none; }
+
+.atti_window {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -277.5px;
+  margin-left: -165px;
+  width: 338px;
+  height: 563px;
+  background-color: silver;
+  font-size: 21px;
+  border-top: 2px solid #f1f1f1;
+  border-left: 2px solid #f1f1f1;
+  border-right: 2px solid #000000d7;
+  border-bottom: 2px solid #000000d7;
+  box-shadow: 1px 1px #000000d7; }
+
+.atti_blue {
+  margin-top: 4px;
+  margin-left: 4px;
+  height: 50px;
+  background-color: #000080;
+  text-align: right;
+  color: #F8FCFC;
+  font-weight: bold;
+  width: 330px; }
+
+.atti_wicon {
+  width: 31px;
+  height: 31px;
+  margin-top: 9px;
+  margin-left: 5px;
+  text-align: center;
+  float: left; }
+
+.atti_wp {
+  margin-left: 5px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 51px;
+  float: left; }
+
+.btn_box {
+  clear: both;
+  margin-right: 5px;
+  line-height: 46px;
+  color: #000000d7; }
+
+.x_btn {
+  margin-right: 2px; }
+
+.atti_blue button {
+  display: inline-block;
+  font-size: 17px;
+  vertical-align: middle;
+  background-color: silver;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  border-top: 2px solid #f1f1f1;
+  border-left: 2px solid #f1f1f1;
+  border-right: 2px solid #000000d7;
+  border-bottom: 2px solid #000000d7;
+  box-shadow: 1px 1px #000000d7; }
+
+.atti_grey {
+  margin: 1px 4px 0px 4px;
+  background-color: silver;
+  width: 330px;
+  height: 505px; }
+
+.atti_logo {
+  width: 310px;
+  height: 280px;
+  margin: 10px;
+  border: 1px solid #000000d7;
+  box-sizing: border-box; }
+
+.idpw_lable {
+  display: inline-block;
+  margin: 0px 10px 10px 10px;
+  line-height: 36px;
+  width: 310px;
+  height: 36px; }
+
+.pw_lable {
+  margin: 10px 10px 10px 10px; }
+
+.comm_idpw {
+  width: 180px;
+  height: 33px;
+  font-size: 19px;
+  float: right; }
+
+.login_line {
+  width: 310px;
+  margin: 0px 10px 7px 10px; }
+
+.join_us {
+  clear: both;
+  margin: 0px 10px 7px 10px;
+  width: 85px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold; }
+
+.sub_btn {
+  clear: both;
+  float: right;
+  margin: 0px 10px 7px 10px;
+  width: 85px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold; }
+
+.login_p {
+  text-align: center; }
+
+.join_window {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -277.5px;
+  margin-left: -360px;
+  height: 563px;
+  width: 720px;
+  background-color: silver;
+  font-size: 21px;
+  border-top: 2px solid #f1f1f1;
+  border-left: 2px solid #f1f1f1;
+  border-right: 2px solid #000000d7;
+  border-bottom: 2px solid #000000d7;
+  box-shadow: 1px 1px #000000d7; }
+
+.join_blue {
+  width: 712px;
+  height: 50px;
+  margin-top: 4px;
+  margin-left: 4px;
+  height: 50px;
+  background-color: #000080;
+  text-align: right;
+  color: #F8FCFC;
+  font-weight: bold; }
+
+.join_blue button {
+  display: inline-block;
+  font-size: 17px;
+  vertical-align: middle;
+  background-color: silver;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  border-top: 2px solid #f1f1f1;
+  border-left: 2px solid #f1f1f1;
+  border-right: 2px solid #000000d7;
+  border-bottom: 2px solid #000000d7;
+  box-shadow: 1px 1px #000000d7; }
+
+.join_grey {
+  width: 712px;
+  margin: 1px 4px 0px 4px;
+  background-color: silver; }
+
+.join_title {
+  margin-top: 8px;
+  margin-left: 25px; }
+
+.join_form {
+  margin-left: 30px;
+  width: 330px;
+  font-weight: normal; }
+
+.id_label {
+  width: 330px;
+  height: 30px;
+  line-height: 30px;
+  float: left; }
+
+.comm_label {
+  width: 330px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 7px;
+  float: left; }
+
+.address_label {
+  margin-bottom: 10px; }
+
+.gender_label {
+  margin-top: 8px;
+  margin-bottom: 2px; }
+
+.birth_label {
+  margin-top: 8px; }
+
+.joinmemo_label {
+  width: 652px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 9px;
+  float: left; }
+
+.input_join {
+  clear: both;
+  float: right;
+  width: 240px;
+  height: 28px;
+  line-height: 30px; }
+
+.gender_join {
+  height: 34px;
+  width: 244px; }
+
+.memo_join {
+  width: 562px; }
+
+.random_num {
+  width: 330px;
+  height: 46px;
+  background-color: whitesmoke; }
+
+.join_randomnum {
+  clear: both;
+  float: left;
+  width: 330px;
+  margin-top: 3px;
+  margin-left: -2px; }
+
+.pic_right {
+  position: absolute;
+  width: 320px;
+  height: 295px;
+  right: 30px;
+  top: 105px; }
+
+.temp_pic {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
+  height: 250px;
+  background-image: url("../img/attiatti_logo.png");
+  background-position: 50% 50%;
+  background-size: cover; }
+
+.face_pic {
+  display: inline-block;
+  margin-top: 14px;
+  width: 320px;
+  height: 30px; }
+
+.file_join {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
+  font-size: 19px; }
+
+.join_line {
+  clear: both;
+  width: 670px;
+  margin: 10px 21px 8px 21px; }
+
+.form_line {
+  width: 669px;
+  margin-left: -9.5px;
+  margin-bottom: 8px; }
+
+.submit_join {
+  position: absolute;
+  width: 190px;
+  height: 84px;
+  bottom: 13px;
+  right: 34px; }
+
+.task_bar {
+  border-top: 2px solid #f1f1f1;
+  background-color: #C0C0C0;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0%; }
+
+.task_start {
+  width: 110px;
+  height: 45.5px;
+  float: left;
+  margin-left: 1px;
+  margin-top: 2px;
+  background-color: transparent;
+  border: none;
+  border-top: 2px solid #f1f1f1;
+  border-left: 2px solid #f1f1f1;
+  border-right: 2px solid #000000d7;
+  border-bottom: 2px solid #000000d7;
+  box-sizing: border-box;
+  box-shadow: -2px -2px 0.5px 0.5px #7D7D7D inset; }
+
+.windows_logo {
+  width: 42px;
+  height: 40px;
+  float: left;
+  margin-left: 6px;
+  margin-top: 1px; }
+
+.task_start_p {
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  height: 46px;
+  line-height: 40px;
+  margin-left: 3px;
+  letter-spacing: 2px; }
+
+.atti_bar {
+  visibility: hidden;
+  display: inline-block;
+  clear: both;
+  width: 270px;
+  height: 45.5px;
+  margin-top: 2px;
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  border-top: 2px solid #000000d7;
+  border-left: 2px solid #000000d7;
+  border-right: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+  box-sizing: border-box;
+  box-shadow: inset 2px 2px #7D7D7D; }
+
+.atti_none_bar {
+  display: none;
+  clear: both;
+  width: 270px;
+  height: 45.5px;
+  margin-top: 2px;
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  border-top: 2px solid #f1f1f1;
+  border-left: 2px solid #f1f1f1;
+  border-right: 2px solid #000000d7;
+  border-bottom: 2px solid #000000d7;
+  box-sizing: border-box;
+  box-shadow: -2px -2px 0.5px 0.5px #7D7D7D inset; }
+
+.atti_ticon {
+  width: 31px;
+  height: 31px;
+  margin-top: 6px;
+  margin-left: 5px;
+  float: left; }
+
+.atti_tp {
+  margin-left: 5px;
+  font-size: 20px;
+  height: 46px;
+  line-height: 43px;
+  font-weight: bold;
+  float: left; }
+
+.clock_bar {
+  border-top: 2px solid #626262;
+  border-left: 2px solid #626262;
+  border-right: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+  box-sizing: border-box;
+  box-shadow: inset 1.5px 1.5px #7D7D7D;
+  float: right;
+  width: 145px;
+  height: 45.5px;
+  margin-top: 2px;
+  margin-right: 3px;
+  line-height: 41px; }
+
+.clock_box {
+  text-align: center;
+  font-size: 20px;
+  height: 45.5px; }
+
+/*# sourceMappingURL=login_join.css.map */

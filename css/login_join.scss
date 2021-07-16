@@ -1,0 +1,553 @@
+$windows_bg:#008080;
+$title_navy:#000080;
+$font_white:#F8FCFC;
+$font_black:rgb(33, 33, 33);
+
+$window_grey:rgb(192, 192, 192);
+$default_grey:#C0C0C0;
+$omok_grey:#E4E4E4;
+$light_grey:rgb(241, 241, 241);
+$shadow_grey:#7D7D7D;
+$clock_grey:#626262;
+$black:#000000d7;
+
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}            
+@mixin border_convex{
+    border-top: 2px solid $light_grey;
+    border-left: 2px solid $light_grey;
+    border-right: 2px solid $black;
+    border-bottom: 2px solid $black;
+    box-sizing: border-box;
+    box-shadow:-2px -2px 0.5px 0.5px $shadow_grey inset;
+}
+@mixin border_concave{
+    border-top: 2px solid $black;
+    border-left: 2px solid $black;
+    border-right: 2px solid $light_grey;
+    border-bottom: 2px solid $light_grey;
+    box-sizing: border-box;
+    box-shadow:inset 2px 2px $shadow_grey;
+}
+@mixin window_option{
+    border-top: 2px solid $light_grey;
+    border-left: 2px solid $light_grey;
+    border-right: 2px solid $black;
+    border-bottom: 2px solid $black;
+    box-shadow: 1px 1px $black;
+}
+@mixin window_blue{
+    margin-top:4px;
+    margin-left:4px;
+    height:50px;
+    background-color:$title_navy;
+    text-align:right;
+    color:$font_white;
+    font-weight:bold;
+}
+@mixin btn_under_x{
+    display:inline-block;
+    font-size:17px;
+    vertical-align:middle;
+    background-color:$window_grey;
+    text-align:center;
+    width:28px;
+    height:28px;
+    @include window_option();
+}
+@mixin window_grey{
+    margin:1px 4px 0px 4px;
+    background-color:$window_grey;
+}
+
+*{margin:0px; padding:0px;
+    font-family: 'ChosunGu';
+    font-size:19px;
+    :focus{outline:none};
+}
+html{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+body{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-425px;
+    margin-left:-600px;
+}
+button{
+    cursor:url("../img/icons/pointer.cur"),pointer;
+}
+.desk_top{
+    background-color:$windows_bg;
+    width:1200px;
+    height:850px;
+}
+.wall_paper{
+    width:1200px;
+    height:800px;
+    position: absolute;
+}
+.wall_paper .common_btn{
+    display:block;
+    background-color:transparent;
+    width:82px;
+    margin-top:33px;
+    margin-left:25px;
+    border:none;
+}
+.wall_paper .mycom_total{
+    display:inline-block;
+    width:82px;
+    margin-top:34px;
+    margin-left:25px;
+}
+.wall_paper .comm_icon{
+    width:66px;
+    height:66px;
+    margin:0 auto;
+}
+.wall_paper p{
+    clear:both;
+    display:inline-block;
+    font-size:19px;
+    text-align:center;
+    width:80px;
+    margin-top:7px;
+    color:white;
+}
+.atti_total{
+    display:inline-block;
+    width:80px;
+    height:105px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-52px;
+    margin-left:-40px;
+    background-color:transparent;
+    border:none;
+}
+
+
+.atti_window{
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-277.5px;
+    margin-left:-165px;
+    width:338px;
+    height:563px;
+    background-color:$window_grey;
+    font-size:21px;
+    @include window_option();
+}
+.atti_blue{
+    @include window_blue();
+    width:330px;
+}
+.atti_wicon{
+    width:31px;
+    height:31px;
+    margin-top:9px;
+    margin-left:5px;
+    text-align:center;
+    float:left;
+}
+.atti_wp{
+    margin-left:5px;
+    text-align:center;
+    font-size:20px;
+    line-height:51px;
+    float:left;
+}
+.btn_box{
+    clear:both;
+    margin-right:5px;
+    line-height:46px;
+    color:$black;
+}
+.x_btn{
+    margin-right:2px;
+}
+.atti_blue button{
+    @include btn_under_x();
+}
+.atti_grey{
+    @include window_grey();
+    width:330px;
+    height:505px;
+}
+.atti_logo{
+    width:310px;
+    height:280px;
+    margin:10px;
+    border:1px solid $black;
+    box-sizing:border-box;
+}
+.idpw_lable{
+    display:inline-block;
+    margin:0px 10px 10px 10px;
+    line-height:36px;
+    width:310px;
+    height:36px;
+}
+.pw_lable{
+    margin:10px 10px 10px 10px;
+}
+.comm_idpw{
+    width:180px;
+    height:33px;
+    font-size:19px;
+    float:right;
+}
+.login_line{
+    width:310px;
+    margin:0px 10px 7px 10px;
+}
+.join_us{
+    clear:both;
+    margin:0px 10px 7px 10px;
+    width:85px;
+    height:60px;
+    font-size:16px;
+    font-weight:bold;
+}
+.sub_btn{
+    clear:both;
+    float:right;
+    margin:0px 10px 7px 10px;
+    width:85px;
+    height:60px;
+    font-size:16px;
+    font-weight:bold;
+}
+.login_p{
+    text-align:center;
+}
+
+.join_window{
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-277.5px;
+    margin-left:-360px;
+    height:563px;
+    width:720px;
+    background-color:$window_grey;
+    font-size:21px;
+    @include window_option();
+}
+.join_blue{
+    width:712px;
+    height:50px;
+    @include window_blue();
+}
+.join_blue button{
+    display:inline-block;
+    font-size:17px;
+    vertical-align:middle;
+    background-color:$window_grey;
+    text-align:center;
+    width:28px;
+    height:28px;
+    @include window_option();
+}
+.join_grey{
+    width:712px;
+    @include window_grey();
+}
+.join_title{
+    margin-top:8px;
+    margin-left:25px;
+}
+.join_form{
+    margin-left:30px;
+    width:330px;
+    font-weight:normal;
+}
+.id_label{
+    width: 330px;
+    height:30px;
+    line-height:30px;
+    float:left;
+}
+.comm_label{
+    width: 330px;
+    height:30px;
+    line-height:30px;
+    margin-top:7px;
+    float:left;
+}
+.address_label{
+    margin-bottom:10px;
+}
+.gender_label{
+    margin-top:8px;
+    margin-bottom:2px;
+}
+.birth_label{
+    margin-top:8px;
+}
+.joinmemo_label{
+    width:652px;
+    height:30px;
+    line-height:30px;
+    margin-bottom:9px;
+    float:left;
+}
+.input_join{
+    clear:both;
+    float:right;
+    width:240px;
+    height:28px;
+    line-height:30px;
+}
+.gender_join{
+    height:34px;
+    width:244px;
+}
+.memo_join{
+    width:562px;
+}
+
+.random_num{
+    width:330px;
+    height:46px;
+    background-color:whitesmoke;
+}
+.join_randomnum{
+    clear:both;
+    float:left;
+    width:330px;
+    margin-top:3px;
+    margin-left:-2px;
+}
+.pic_right{
+    position:absolute;
+    width:320px;
+    height:295px;
+    right:30px;
+    top:102px;
+}
+.temp_pic{
+    display:block;
+    margin:0 auto;
+    width:230px;
+    height:250px;
+    background-image:url("../img/attiatti_logo.png");
+    background-position:50% 50%;
+    background-size:cover;
+}
+.face_pic{
+    display:inline-block;
+    margin-top:14px;
+    width:320px;
+    height:30px;
+}
+.file_join{
+    display:block;
+    margin:0 auto;
+    width:230px;
+    font-size:19px;
+}
+.join_line{
+    clear:both;
+    width:670px;
+    margin:10px 21px 8px 21px;
+}
+.form_line{
+    width:669px;
+    margin-left:-9.5px;
+    margin-bottom:8px;
+}
+.submit_join{
+    position:absolute;
+    width:190px;
+    height:84px;
+    bottom:13px;
+    right:40px;
+}
+
+.task_bar{
+    border-top: 2px solid $light_grey;
+    background-color:$default_grey;
+    width:100%;
+    height:50px;
+    margin:0 auto;
+    position: absolute;
+    bottom:0%;
+}
+.task_start{
+    width:110px;
+    height:45.5px;
+    float:left;
+    margin-left:1px;
+    margin-top:2px;
+    background-color:transparent;
+    border:none;
+    @include border_convex();
+}
+.windows_logo{
+    width:42px;
+    height:40px;
+    float:left;
+    margin-left:6px;
+    margin-top:1px;
+}
+.task_start_p{
+    font-size:23px;
+    font-weight:bold;
+    text-align:center;
+    height:46px;
+    line-height:40px;
+    margin-left:3px;
+    letter-spacing:2px;
+}
+.atti_bar{
+    visibility:hidden;
+    display:inline-block;
+    clear:both;
+    width: 270px;
+    height: 45.5px;
+    margin-top:2px;
+    margin-left:5px;
+    background-color:transparent;
+    border:none;
+    @include border_concave();
+}
+.atti_none_bar{
+    display:none;
+    clear:both;
+    width: 270px;
+    height: 45.5px;
+    margin-top:2px;
+    margin-left:5px;
+    background-color:transparent;
+    border:none;
+    @include border_convex();
+}
+.atti_ticon{
+    width:31px;
+    height:31px;
+    margin-top:6px;
+    margin-left:5px;
+    float:left;
+}
+.atti_tp{
+    margin-left:5px;
+    font-size:20px;
+    height:46px;
+    line-height:43px;
+    font-weight:bold;
+    float:left;
+}
+.clock_bar{
+    border-top: 2px solid $clock_grey;
+    border-left: 2px solid $clock_grey;
+    border-right: 2px solid $light_grey;
+    border-bottom: 2px solid $light_grey;
+    box-sizing: border-box;
+    box-shadow:inset 1.5px 1.5px $shadow_grey;
+    float:right;
+    width:145px;
+    height:45.5px;
+    margin-top:2px;
+    margin-right:3px;
+    line-height:41px;
+}
+.clock_box{
+    text-align:center;
+    font-size:20px;
+    height:45.5px;
+}
+
+.btn_area{
+    width:303px;
+    height:30px;
+    margin-top:7px;
+    margin-left:17px;
+    text-align:center;
+}
+.top_btn{
+    float:left;
+    font-size:18px;
+    width:75px;
+    height:30px;
+    background-color:transparent;
+    border:none;
+
+}
+.main_line{
+    width:310px;
+    margin:7px 10px 7px 10px;
+}
+.user_info{
+    width:303px;
+    height:48px;
+    float:left;
+    margin-left:16px;
+}
+.user_name{
+    margin-bottom:5px;
+}
+.user_pic{
+    float:right;
+    width:100px;
+    height:44px;
+    margin-top:-46px;
+    margin-right:3px;
+}
+.list_area{
+    margin-left:17px;
+    width:303px;
+    height:268px;
+    background-color:$font_white;
+    padding-top:2px;
+}
+.list_people{
+    font-size:20px;
+    width:280px;
+    height:30px;
+    line-height:30px;
+    margin-top:7px;
+    margin-left:10px;
+}
+.search_area{
+    margin-left:15px;
+    line-height:50px;
+    width:303px;
+    height:50px;
+}
+.search_text{
+    width:224px;
+    height:35px;
+}
+.search_submit{
+    margin-left:11px;
+    width:58px;
+    height:37px;
+}
+.bottom_area{
+    margin:0 auto;
+    width:303px;
+    height:30px;
+    border:1px solid red;
+
+}
+.bottom_stat{
+    float:left;
+    width:100px;
+    height:30px;
+    text-align:center;
+    @include border_concave();
+    font-size:15px;
+}
